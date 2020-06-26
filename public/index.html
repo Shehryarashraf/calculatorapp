@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">     
+        <div class="table-responsive-sm">    
+          <table class="table table-bordered">
+            <tr>
+                <input id="input" class="input" type="text" >
+            </tr>
+            <tr>
+              <td class="color" colspan="3" onclick="clearResult()">C</td>
+              <td class="color" onclick="getNumber('/')">/</td>
+            </tr>
+            <tr>
+              <td class="black" onclick="getNumber('7')">7</td>
+              <td class="black" onclick="getNumber('8')">8</td>
+              <td class="black" onclick="getNumber('9')">9</td>
+              <td class="color" onclick="getNumber('*')">x</td>
+            </tr>
+            <tr>
+                <td class="black" onclick="getNumber('4')">4</td>
+                <td class="black" onclick="getNumber('5')">5</td>
+                <td class="black" onclick="getNumber('6')">6</td>
+                <td class="color" onclick="getNumber('+')">+</td>
+            </tr>
+            <tr>
+                <td class="black" onclick="getNumber('1')">1</td>
+                <td class="black" onclick="getNumber('2')">2</td>
+                <td class="black" onclick="getNumber('3')">3</td>
+                <td class="color" onclick="getNumber('-')">-</td>
+            </tr>
+            <tr>
+                <td class="black" colspan="2" onclick="getNumber('00')">00</td>
+                <td class="black" onclick="getNumber('0')">0</td>
+                <td id="grey" class="color" onclick="getResult()">=</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+      
+</body>
+<script src="./app.js"></script>
+</html>
